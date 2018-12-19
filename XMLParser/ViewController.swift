@@ -15,6 +15,8 @@ class ViewController: UIViewController,XMLParserDelegate {
     var name = String()
     var position = String()
     
+    @IBOutlet var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -55,8 +57,6 @@ class ViewController: UIViewController,XMLParserDelegate {
             person.position = position
             
             persons.append(person)
-            
-            print(person.position)
         }
         
     }
@@ -82,3 +82,27 @@ class ViewController: UIViewController,XMLParserDelegate {
 }
 
 
+extension ViewController:UITableViewDataSource,UITableViewDelegate{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return persons.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+      
+        let cell : personCell = tableView.dequeueReusableCell(withIdentifier: "personCell") as! personCell
+      
+        let person = persons[indexPath.row]
+        cell.nameLabel.text = person.name
+        cell.positionLabel.text = person.position
+        
+        return cell
+    }
+    
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+       
+        return 100
+    }
+    
+}

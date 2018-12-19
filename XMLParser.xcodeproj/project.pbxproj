@@ -14,6 +14,7 @@
 		8D30E74221C9F51900C40CAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D30E74021C9F51900C40CAE /* LaunchScreen.storyboard */; };
 		8D30E74B21C9F77B00C40CAE /* personInfo.xml in Resources */ = {isa = PBXBuildFile; fileRef = 8D30E74A21C9F77B00C40CAE /* personInfo.xml */; };
 		8D30E74D21CA073200C40CAE /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D30E74C21CA073200C40CAE /* PersonModel.swift */; };
+		8D30E74F21CA1AD700C40CAE /* personCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D30E74E21CA1AD700C40CAE /* personCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8D30E74321C9F51900C40CAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D30E74A21C9F77B00C40CAE /* personInfo.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = personInfo.xml; sourceTree = "<group>"; };
 		8D30E74C21CA073200C40CAE /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
+		8D30E74E21CA1AD700C40CAE /* personCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				8D30E74921C9F54A00C40CAE /* View */,
 				8D30E73721C9F51500C40CAE /* AppDelegate.swift */,
 				8D30E73921C9F51500C40CAE /* ViewController.swift */,
+				8D30E74E21CA1AD700C40CAE /* personCell.swift */,
 				8D30E74A21C9F77B00C40CAE /* personInfo.xml */,
 				8D30E73E21C9F51900C40CAE /* Assets.xcassets */,
 				8D30E74321C9F51900C40CAE /* Info.plist */,
@@ -152,6 +155,7 @@
 			files = (
 				8D30E74D21CA073200C40CAE /* PersonModel.swift in Sources */,
 				8D30E73A21C9F51500C40CAE /* ViewController.swift in Sources */,
+				8D30E74F21CA1AD700C40CAE /* personCell.swift in Sources */,
 				8D30E73821C9F51500C40CAE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
